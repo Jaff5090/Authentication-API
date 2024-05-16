@@ -8,4 +8,7 @@ router.post('/register', userController.registerUser);
 
 router.post('/account', logRole, authorize(['ROLE_ADMIN']), userController.registerUser);
 
+router.post('/token', userController.createToken);
+
+
 module.exports = router;
