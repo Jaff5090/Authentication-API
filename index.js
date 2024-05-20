@@ -7,7 +7,7 @@ mongoose.connect(process.env.MONGODB_URI)
     console.log('MongoDB connected successfully');
     app.listen(process.env.PORT, () => {
       console.log(`Server is running on http://localhost:${process.env.PORT}`);
-      console.log(`Swagger API docs available at http://localhost:${process.env.PORT}/api-docs`);
+      console.log(`Swagger API docs available at http://localhost:${process.env.PORT}/api-docs/auth`);
     });
   })
   .catch((error) => {
